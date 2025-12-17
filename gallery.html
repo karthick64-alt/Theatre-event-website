@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery & Media - Q Productions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Cinzel:wght@400;600;700&family=Lora:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-black text-white">
+    <!-- Header -->
+    <header class="fixed top-0 w-full bg-black z-50 border-b border-gold-500/20">
+        <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-12 h-12 bg-yellow-400 flex items-center justify-center">
+                    <span class="text-black font-bold text-2xl font-cinzel">Q</span>
+                </div>
+                <a href="index.html" class="text-white text-xl font-lora hover:text-gold-400">Productions</a>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="text-white hover:text-gold-400 transition">Home</a>
+                <a href="shows.html" class="text-white hover:text-gold-400 transition">Shows</a>
+                <a href="about.html" class="text-white hover:text-gold-400 transition">About</a>
+                <a href="contact.html" class="text-white hover:text-gold-400 transition">Contact</a>
+                <a href="booking.html" class="bg-gold-400 text-black px-4 py-2 rounded hover:bg-gold-500 transition font-semibold">Get Tickets</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header - Masonry Style -->
+    <section class="pt-32 pb-16 bg-gradient-to-br from-black via-dark-red-900/20 to-black">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-6xl md:text-7xl font-bold mb-6 font-playfair">Gallery & Media</h1>
+            <p class="text-xl text-white/80 font-lora">Capturing moments from our spectacular productions</p>
+        </div>
+    </section>
+
+    <!-- Filter Tabs -->
+    <section class="py-8 bg-black border-b border-gold-500/20">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-wrap justify-center gap-4">
+                <button class="filter-btn active bg-gold-400 text-black px-6 py-2 rounded-full font-semibold hover:bg-gold-500 transition font-cinzel" data-filter="all">All</button>
+                <button class="filter-btn bg-dark-red-900/30 text-white px-6 py-2 rounded-full font-semibold hover:bg-dark-red-900/50 transition font-cinzel" data-filter="shows">Show Photos</button>
+                <button class="filter-btn bg-dark-red-900/30 text-white px-6 py-2 rounded-full font-semibold hover:bg-dark-red-900/50 transition font-cinzel" data-filter="behind">Behind the Scenes</button>
+                <button class="filter-btn bg-dark-red-900/30 text-white px-6 py-2 rounded-full font-semibold hover:bg-dark-red-900/50 transition font-cinzel" data-filter="videos">Videos</button>
+                <button class="filter-btn bg-dark-red-900/30 text-white px-6 py-2 rounded-full font-semibold hover:bg-dark-red-900/50 transition font-cinzel" data-filter="press">Press Coverage</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid - Masonry Layout -->
+    <section class="py-16 bg-black">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="gallery-grid">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item shows group relative overflow-hidden rounded-lg cursor-pointer" data-category="shows">
+                    <div class="relative h-80 bg-gradient-to-br from-gold-400/20 to-dark-red-800">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1503095396549-807759245b35?w=600')] bg-cover bg-center opacity-70 group-hover:opacity-100 transition"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-100 transition"></div>
+                        <div class="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition">
+                            <p class="text-white font-semibold font-cinzel">Hamlet - Act III</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item behind group relative overflow-hidden rounded-lg cursor-pointer" data-category="behind">
+                    <div class="relative h-64 bg-gradient-to-br from-gold-400/20 to-dark-red-800">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=600')] bg-cover bg-center opacity-70 group-hover:opacity-100 transition"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-100 transition"></div>
+                        <div class="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition">
+                            <p class="text-white font-semibold font-cinzel">Rehearsal Session</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item videos group relative overflow-hidden rounded-lg cursor-pointer" data-category="videos">
+                    <div class="relative h-96 bg-gradient-to-br from-gold-400/20 to-dark-red-800">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1514306191717-452ec28c7814?w=600')] bg-cover bg-center opacity-70 group-hover:opacity-100 transition"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-20 h-20 bg-gold-400/80 rounded-full flex items-center justify-center group-hover:bg-gold-400 transition">
+                                <svg class="w-10 h-10 text-black" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition">
+                            <p class="text-white font-semibold font-cinzel">Show Trailer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item shows group relative overflow-hidden rounded-lg cursor-pointer" data-category="shows">
+                    <div class="relative h-64 bg-gradient-to-br from-gold-400/20 to-dark-red-800">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600')] bg-cover bg-center opacity-70 group-hover:opacity-100 transition"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-100 transition"></div>
+                        <div class="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition">
+                            <p class="text-white font-semibold font-cinzel">The Phantom - Finale</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item press group relative overflow-hidden rounded-lg cursor-pointer" data-category="press">
+                    <div class="relative h-80 bg-gradient-to-br from-gold-400/20 to-dark-red-800">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600')] bg-cover bg-center opacity-70 group-hover:opacity-100 transition"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-100 transition"></div>
+                        <div class="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition">
+                            <p class="text-white font-semibold font-cinzel">Press Night</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item behind group relative overflow-hidden rounded-lg cursor-pointer" data-category="behind">
+                    <div class="relative h-96 bg-gradient-to-br from-gold-400/20 to-dark-red-800">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=600')] bg-cover bg-center opacity-70 group-hover:opacity-100 transition"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-100 transition"></div>
+                        <div class="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition">
+                            <p class="text-white font-semibold font-cinzel">Costume Fitting</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 7 -->
+                <div class="gallery-item shows group relative overflow-hidden rounded-lg cursor-pointer" data-category="shows">
+                    <div class="relative h-80 bg-gradient-to-br from-gold-400/20 to-dark-red-800">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=600')] bg-cover bg-center opacity-70 group-hover:opacity-100 transition"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-100 transition"></div>
+                        <div class="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition">
+                            <p class="text-white font-semibold font-cinzel">Romeo & Juliet</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 8 -->
+                <div class="gallery-item videos group relative overflow-hidden rounded-lg cursor-pointer" data-category="videos">
+                    <div class="relative h-64 bg-gradient-to-br from-gold-400/20 to-dark-red-800">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=600')] bg-cover bg-center opacity-70 group-hover:opacity-100 transition"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-20 h-20 bg-gold-400/80 rounded-full flex items-center justify-center group-hover:bg-gold-400 transition">
+                                <svg class="w-10 h-10 text-black" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition">
+                            <p class="text-white font-semibold font-cinzel">Behind the Scenes Video</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 9 -->
+                <div class="gallery-item press group relative overflow-hidden rounded-lg cursor-pointer" data-category="press">
+                    <div class="relative h-80 bg-gradient-to-br from-gold-400/20 to-dark-red-800">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1503095396549-807759245b35?w=600')] bg-cover bg-center opacity-70 group-hover:opacity-100 transition"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-100 transition"></div>
+                        <div class="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition">
+                            <p class="text-white font-semibold font-cinzel">Media Coverage</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-gold-500/20 py-8">
+        <div class="container mx-auto px-6 text-center text-white/60">
+            <p>© 2024 by Q Productions. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Gallery filter functionality
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Update active button
+                document.querySelectorAll('.filter-btn').forEach(b => {
+                    b.classList.remove('active', 'bg-gold-400', 'text-black');
+                    b.classList.add('bg-dark-red-900/30', 'text-white');
+                });
+                this.classList.add('active', 'bg-gold-400', 'text-black');
+                this.classList.remove('bg-dark-red-900/30', 'text-white');
+
+                // Filter gallery items
+                const filter = this.dataset.filter;
+                document.querySelectorAll('.gallery-item').forEach(item => {
+                    if (filter === 'all' || item.dataset.category === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
+

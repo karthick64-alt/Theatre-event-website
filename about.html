@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Q Productions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Cinzel:wght@400;600;700&family=Lora:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-black text-white">
+    <!-- Header -->
+    <header class="fixed top-0 w-full bg-black z-50 border-b border-gold-500/20">
+        <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-12 h-12 bg-yellow-400 flex items-center justify-center">
+                    <span class="text-black font-bold text-2xl font-cinzel">Q</span>
+                </div>
+                <a href="index.html" class="text-white text-xl font-lora hover:text-gold-400">Productions</a>
+            </div>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="index.html" class="text-white hover:text-gold-400 transition font-lora">Home</a>
+                <div class="relative group">
+                    <a href="shows.html" class="text-white hover:text-gold-400 transition font-lora flex items-center">
+                        Shows
+                        <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                    </a>
+                    <div class="absolute top-full left-0 mt-2 w-48 bg-dark-red-900 border border-gold-400/30 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                        <a href="shows.html" class="block px-4 py-2 text-white hover:bg-gold-400/20 hover:text-gold-400 transition">All Shows</a>
+                        <a href="show-details.html" class="block px-4 py-2 text-white hover:bg-gold-400/20 hover:text-gold-400 transition">Show Details</a>
+                    </div>
+                </div>
+                <a href="about.html" class="text-gold-400 font-semibold font-lora">About</a>
+                <a href="gallery.html" class="text-white hover:text-gold-400 transition font-lora">Gallery</a>
+                <a href="reviews.html" class="text-white hover:text-gold-400 transition font-lora">Reviews</a>
+                <a href="blog.html" class="text-white hover:text-gold-400 transition font-lora">Blog</a>
+                <div class="relative group">
+                    <a href="#" class="text-white hover:text-gold-400 transition font-lora flex items-center">
+                        More
+                        <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                    </a>
+                    <div class="absolute top-full left-0 mt-2 w-48 bg-dark-red-900 border border-gold-400/30 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                        <a href="membership.html" class="block px-4 py-2 text-white hover:bg-gold-400/20 hover:text-gold-400 transition">Membership</a>
+                        <a href="venue.html" class="block px-4 py-2 text-white hover:bg-gold-400/20 hover:text-gold-400 transition">Venue</a>
+                        <a href="cast-crew.html" class="block px-4 py-2 text-white hover:bg-gold-400/20 hover:text-gold-400 transition">Cast & Crew</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="text-white hover:text-gold-400 transition font-lora">Contact</a>
+                <a href="booking.html" class="bg-gold-400 text-black px-4 py-2 rounded hover:bg-gold-500 transition font-semibold font-cinzel">Get Tickets</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-btn" class="text-white hover:text-gold-400 transition">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section - Split Screen Design -->
+    <section class="pt-32 pb-20 bg-black">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-6xl md:text-7xl font-bold mb-6 font-playfair">Our Story</h1>
+                    <p class="text-xl text-white/80 leading-relaxed font-lora mb-6">
+                        Q Productions was founded with a singular vision: to create moments that last a lifetime. Since our inception, we have been dedicated to bringing world-class theatrical experiences to audiences, combining timeless classics with innovative contemporary productions.
+                    </p>
+                    <p class="text-lg text-white/70 leading-relaxed font-lora">
+                        We believe that theatre has the power to transform, inspire, and connect us all. Every production is crafted with meticulous attention to detail, from casting to set design, ensuring that each performance is an unforgettable journey.
+                    </p>
+                </div>
+                <div class="relative">
+                    <div class="absolute inset-0 bg-gradient-to-br from-gold-400/20 to-dark-red-800 rounded-lg transform rotate-3"></div>
+                    <div class="relative bg-dark-red-900/30 border border-gold-400/20 rounded-lg h-96 flex items-center justify-center">
+                        <span class="text-6xl">🎭</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision - Side by Side Cards -->
+    <section class="py-20 bg-gradient-to-b from-black to-dark-red-900/30">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gradient-to-br from-dark-red-900/50 to-black border border-gold-400/30 p-10 rounded-lg">
+                    <div class="text-5xl mb-6 text-gold-400">🎯</div>
+                    <h2 class="text-3xl font-bold mb-6 font-playfair">Our Mission</h2>
+                    <p class="text-lg leading-relaxed text-white/90 font-lora">
+                        To produce exceptional theatrical experiences that entertain, inspire, and challenge audiences. We are committed to artistic excellence, cultural enrichment, and creating a welcoming space where stories come to life and communities connect.
+                    </p>
+                </div>
+                <div class="bg-gradient-to-br from-dark-red-900/50 to-black border border-gold-400/30 p-10 rounded-lg">
+                    <div class="text-5xl mb-6 text-gold-400">👁️</div>
+                    <h2 class="text-3xl font-bold mb-6 font-playfair">Our Vision</h2>
+                    <p class="text-lg leading-relaxed text-white/90 font-lora">
+                        To be recognized as a premier destination for world-class theatre, known for innovative productions, exceptional talent, and unforgettable experiences. We envision a future where theatre remains a vital and accessible art form for all.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements & Awards - Trophy Display -->
+    <section class="py-20 bg-black">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-12 text-center font-playfair">Achievements & Awards</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center bg-dark-red-900/30 border border-gold-400/20 p-8 rounded-lg hover:border-gold-400/50 transition">
+                    <div class="text-5xl mb-4">🏆</div>
+                    <h3 class="text-2xl font-bold mb-2 font-cinzel">Tony Awards</h3>
+                    <p class="text-gold-400 font-semibold">3 Nominations</p>
+                    <p class="text-white/70 text-sm mt-2">Best Production, Best Director, Best Set Design</p>
+                </div>
+                <div class="text-center bg-dark-red-900/30 border border-gold-400/20 p-8 rounded-lg hover:border-gold-400/50 transition">
+                    <div class="text-5xl mb-4">⭐</div>
+                    <h3 class="text-2xl font-bold mb-2 font-cinzel">Regional Theatre</h3>
+                    <p class="text-gold-400 font-semibold">Award of Excellence</p>
+                    <p class="text-white/70 text-sm mt-2">Recognized for Outstanding Contribution</p>
+                </div>
+                <div class="text-center bg-dark-red-900/30 border border-gold-400/20 p-8 rounded-lg hover:border-gold-400/50 transition">
+                    <div class="text-5xl mb-4">🎖️</div>
+                    <h3 class="text-2xl font-bold mb-2 font-cinzel">Audience Choice</h3>
+                    <p class="text-gold-400 font-semibold">5 Years Running</p>
+                    <p class="text-white/70 text-sm mt-2">Favorite Theatre Company</p>
+                </div>
+                <div class="text-center bg-dark-red-900/30 border border-gold-400/20 p-8 rounded-lg hover:border-gold-400/50 transition">
+                    <div class="text-5xl mb-4">📊</div>
+                    <h3 class="text-2xl font-bold mb-2 font-cinzel">250K+</h3>
+                    <p class="text-gold-400 font-semibold">Annual Attendees</p>
+                    <p class="text-white/70 text-sm mt-2">Growing community of theatre lovers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values - Icon Grid -->
+    <section class="py-20 bg-gradient-to-b from-black to-dark-red-900/30">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-12 text-center font-playfair">Our Values</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="text-center">
+                    <div class="w-24 h-24 mx-auto mb-6 bg-gradient-to-br from-gold-400/20 to-dark-red-800 rounded-full flex items-center justify-center">
+                        <span class="text-4xl">✨</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 font-cinzel">Excellence</h3>
+                    <p class="text-white/80 font-lora">We strive for the highest standards in every aspect of our productions, from casting to execution.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-24 h-24 mx-auto mb-6 bg-gradient-to-br from-gold-400/20 to-dark-red-800 rounded-full flex items-center justify-center">
+                        <span class="text-4xl">🤝</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 font-cinzel">Community</h3>
+                    <p class="text-white/80 font-lora">Theatre brings people together. We're committed to building a vibrant, inclusive community.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-24 h-24 mx-auto mb-6 bg-gradient-to-br from-gold-400/20 to-dark-red-800 rounded-full flex items-center justify-center">
+                        <span class="text-4xl">🎨</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 font-cinzel">Innovation</h3>
+                    <p class="text-white/80 font-lora">We embrace new ideas and creative approaches while honoring theatrical traditions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-20 bg-black">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-12 text-center font-playfair">Leadership Team</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="text-center">
+                    <div class="w-40 h-40 mx-auto mb-6 bg-gradient-to-br from-gold-400/20 to-dark-red-800 rounded-full flex items-center justify-center">
+                        <span class="text-5xl">👤</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2 font-cinzel">Alexandra Quinn</h3>
+                    <p class="text-gold-400 mb-4 font-semibold">Artistic Director</p>
+                    <p class="text-white/70 text-sm font-lora">20+ years of experience in theatre production and direction.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-40 h-40 mx-auto mb-6 bg-gradient-to-br from-gold-400/20 to-dark-red-800 rounded-full flex items-center justify-center">
+                        <span class="text-5xl">👤</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2 font-cinzel">James Morrison</h3>
+                    <p class="text-gold-400 mb-4 font-semibold">Executive Producer</p>
+                    <p class="text-white/70 text-sm font-lora">Expert in theatre management and production logistics.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-40 h-40 mx-auto mb-6 bg-gradient-to-br from-gold-400/20 to-dark-red-800 rounded-full flex items-center justify-center">
+                        <span class="text-5xl">👤</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2 font-cinzel">Maria Santos</h3>
+                    <p class="text-gold-400 mb-4 font-semibold">Managing Director</p>
+                    <p class="text-white/70 text-sm font-lora">Oversees operations and strategic development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-gold-500/20 py-8">
+        <div class="container mx-auto px-6 text-center text-white/60">
+            <p>© 2024 by Q Productions. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

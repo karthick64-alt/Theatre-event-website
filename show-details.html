@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Details - Q Productions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Cinzel:wght@400;600;700&family=Lora:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-black text-white">
+    <!-- Header -->
+    <header class="fixed top-0 w-full bg-black z-50 border-b border-gold-500/20">
+        <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-12 h-12 bg-yellow-400 flex items-center justify-center">
+                    <span class="text-black font-bold text-2xl font-cinzel">Q</span>
+                </div>
+                <a href="index.html" class="text-white text-xl font-lora hover:text-gold-400">Productions</a>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="text-white hover:text-gold-400 transition">Home</a>
+                <a href="shows.html" class="text-white hover:text-gold-400 transition">Shows</a>
+                <a href="about.html" class="text-white hover:text-gold-400 transition">About</a>
+                <a href="contact.html" class="text-white hover:text-gold-400 transition">Contact</a>
+                <a href="booking.html" class="bg-gold-400 text-black px-4 py-2 rounded hover:bg-gold-500 transition font-semibold">Get Tickets</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Image with Overlay -->
+    <section class="pt-24 pb-16 relative h-96 overflow-hidden">
+        <div class="absolute inset-0">
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent z-10"></div>
+            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1503095396549-807759245b35?w=1920')] bg-cover bg-center"></div>
+        </div>
+        <div class="relative z-20 container mx-auto px-6 h-full flex items-end">
+            <div>
+                <h1 class="text-6xl md:text-7xl font-bold mb-4 font-playfair">Hamlet</h1>
+                <p class="text-2xl text-gold-400 font-lora">A Timeless Tragedy</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content - Split Layout -->
+    <section class="py-16 bg-black">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                <!-- Left Column - Main Content -->
+                <div class="lg:col-span-2 space-y-12">
+                    <!-- Synopsis -->
+                    <div class="bg-dark-red-900/30 border-l-4 border-gold-400 p-8 rounded-r-lg">
+                        <h2 class="text-4xl font-bold mb-6 font-playfair">Synopsis</h2>
+                        <p class="text-lg leading-relaxed text-white/90 mb-4 font-lora">
+                            In this powerful adaptation of Shakespeare's masterpiece, we follow Prince Hamlet as he grapples with grief, betrayal, and the weight of avenging his father's murder. Set in the opulent court of Elsinore, this production brings new life to the classic tale of revenge, madness, and moral complexity.
+                        </p>
+                        <p class="text-lg leading-relaxed text-white/90 font-lora">
+                            With stunning visuals, a stellar cast, and innovative staging, this Hamlet promises to be an unforgettable theatrical experience that honors the original while speaking to contemporary audiences.
+                        </p>
+                    </div>
+
+                    <!-- Director's Note -->
+                    <div class="bg-gradient-to-br from-dark-red-900/20 to-black border border-gold-400/20 p-8 rounded-lg">
+                        <h2 class="text-3xl font-bold mb-4 font-cinzel text-gold-400">Director's Note</h2>
+                        <p class="text-lg leading-relaxed text-white/80 italic font-lora">
+                            "Hamlet remains one of the most profound explorations of the human condition. In this production, we've sought to strip away centuries of tradition to reveal the raw, emotional core of this timeless story. Every gesture, every word, every silence has been carefully crafted to create an experience that will resonate long after the curtain falls."
+                        </p>
+                        <p class="mt-4 text-gold-400 font-semibold font-cinzel">- Director Sarah Williams</p>
+                    </div>
+
+                    <!-- Cast & Crew -->
+                    <div>
+                        <h2 class="text-4xl font-bold mb-8 font-playfair">Cast & Crew</h2>
+                        <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                            <div class="text-center">
+                                <div class="w-32 h-32 mx-auto mb-4 bg-gradient-to-br from-gold-400/20 to-dark-red-800 rounded-full flex items-center justify-center">
+                                    <span class="text-4xl">👤</span>
+                                </div>
+                                <h3 class="font-bold font-cinzel">John Smith</h3>
+                                <p class="text-gold-400 text-sm">Hamlet</p>
+                            </div>
+                            <div class="text-center">
+                                <div class="w-32 h-32 mx-auto mb-4 bg-gradient-to-br from-gold-400/20 to-dark-red-800 rounded-full flex items-center justify-center">
+                                    <span class="text-4xl">👤</span>
+                                </div>
+                                <h3 class="font-bold font-cinzel">Emma Johnson</h3>
+                                <p class="text-gold-400 text-sm">Ophelia</p>
+                            </div>
+                            <div class="text-center">
+                                <div class="w-32 h-32 mx-auto mb-4 bg-gradient-to-br from-gold-400/20 to-dark-red-800 rounded-full flex items-center justify-center">
+                                    <span class="text-4xl">👤</span>
+                                </div>
+                                <h3 class="font-bold font-cinzel">Michael Brown</h3>
+                                <p class="text-gold-400 text-sm">Claudius</p>
+                            </div>
+                            <div class="text-center">
+                                <div class="w-32 h-32 mx-auto mb-4 bg-gradient-to-br from-gold-400/20 to-dark-red-800 rounded-full flex items-center justify-center">
+                                    <span class="text-4xl">👤</span>
+                                </div>
+                                <h3 class="font-bold font-cinzel">Sarah Williams</h3>
+                                <p class="text-gold-400 text-sm">Director</p>
+                            </div>
+                            <div class="text-center">
+                                <div class="w-32 h-32 mx-auto mb-4 bg-gradient-to-br from-gold-400/20 to-dark-red-800 rounded-full flex items-center justify-center">
+                                    <span class="text-4xl">👤</span>
+                                </div>
+                                <h3 class="font-bold font-cinzel">David Lee</h3>
+                                <p class="text-gold-400 text-sm">Set Designer</p>
+                            </div>
+                            <div class="text-center">
+                                <div class="w-32 h-32 mx-auto mb-4 bg-gradient-to-br from-gold-400/20 to-dark-red-800 rounded-full flex items-center justify-center">
+                                    <span class="text-4xl">👤</span>
+                                </div>
+                                <h3 class="font-bold font-cinzel">Lisa Chen</h3>
+                                <p class="text-gold-400 text-sm">Costume Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column - Booking Info -->
+                <div class="space-y-6">
+                    <!-- Date & Time -->
+                    <div class="bg-dark-red-900/50 border border-gold-400/30 p-6 rounded-lg sticky top-24">
+                        <h3 class="text-2xl font-bold mb-6 font-cinzel">Show Information</h3>
+                        <div class="space-y-4 mb-6">
+                            <div>
+                                <p class="text-gold-400 font-semibold mb-1">Date & Time</p>
+                                <p class="text-white">Dec 15-20, 2024</p>
+                                <p class="text-white/70">Evening: 7:30 PM | Matinee: 2:00 PM</p>
+                            </div>
+                            <div>
+                                <p class="text-gold-400 font-semibold mb-1">Duration</p>
+                                <p class="text-white">3 hours (with intermission)</p>
+                            </div>
+                            <div>
+                                <p class="text-gold-400 font-semibold mb-1">Venue</p>
+                                <p class="text-white">Grand Theatre</p>
+                                <p class="text-white/70 text-sm">123 Theatre District, City Center</p>
+                            </div>
+                        </div>
+
+                        <!-- Ticket Pricing -->
+                        <div class="border-t border-gold-400/30 pt-6 mb-6">
+                            <h4 class="text-xl font-bold mb-4 font-cinzel">Ticket Pricing</h4>
+                            <div class="space-y-3">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-white">Premium</span>
+                                    <span class="text-gold-400 font-bold">$85</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-white">Standard</span>
+                                    <span class="text-gold-400 font-bold">$65</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-white">Balcony</span>
+                                    <span class="text-gold-400 font-bold">$45</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-white">Student</span>
+                                    <span class="text-gold-400 font-bold">$35</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Venue Map -->
+                        <div class="border-t border-gold-400/30 pt-6 mb-6">
+                            <h4 class="text-xl font-bold mb-4 font-cinzel">Venue Map</h4>
+                            <div class="bg-dark-red-900/30 h-48 rounded flex items-center justify-center border border-gold-400/20">
+                                <p class="text-white/60">Interactive Map</p>
+                            </div>
+                            <a href="venue.html" class="text-gold-400 hover:text-gold-300 text-sm mt-2 inline-block">View Full Venue Info →</a>
+                        </div>
+
+                        <!-- Book Tickets CTA -->
+                        <a href="booking.html" class="block w-full bg-gold-400 text-black text-center py-4 rounded-lg font-bold text-lg hover:bg-gold-500 transition font-cinzel">
+                            Book Tickets
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-gold-500/20 py-8">
+        <div class="container mx-auto px-6 text-center text-white/60">
+            <p>© 2024 by Q Productions. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

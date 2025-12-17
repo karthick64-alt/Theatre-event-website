@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Q Productions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Cinzel:wght@400;600;700&family=Lora:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-black text-white">
+    <!-- Header -->
+    <header class="fixed top-0 w-full bg-black z-50 border-b border-gold-500/20">
+        <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-12 h-12 bg-yellow-400 flex items-center justify-center">
+                    <span class="text-black font-bold text-2xl font-cinzel">Q</span>
+                </div>
+                <a href="index.html" class="text-white text-xl font-lora hover:text-gold-400">Productions</a>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="text-white hover:text-gold-400 transition">Home</a>
+                <a href="shows.html" class="text-white hover:text-gold-400 transition">Shows</a>
+                <a href="about.html" class="text-white hover:text-gold-400 transition">About</a>
+                <a href="contact.html" class="text-white hover:text-gold-400 transition">Contact</a>
+                <a href="booking.html" class="bg-gold-400 text-black px-4 py-2 rounded hover:bg-gold-500 transition font-semibold">Get Tickets</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Admin Dashboard -->
+    <section class="pt-32 pb-12 bg-black">
+        <div class="container mx-auto px-6">
+            <h1 class="text-5xl font-bold mb-8 font-playfair">Admin Dashboard</h1>
+            
+            <!-- Stats Overview -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
+                <div class="bg-dark-red-900/30 border border-gold-400/20 p-6 rounded-lg">
+                    <p class="text-white/60 mb-2 font-lora">Total Bookings</p>
+                    <p class="text-3xl font-bold text-gold-400 font-cinzel">1,247</p>
+                </div>
+                <div class="bg-dark-red-900/30 border border-gold-400/20 p-6 rounded-lg">
+                    <p class="text-white/60 mb-2 font-lora">Revenue</p>
+                    <p class="text-3xl font-bold text-gold-400 font-cinzel">$87,450</p>
+                </div>
+                <div class="bg-dark-red-900/30 border border-gold-400/20 p-6 rounded-lg">
+                    <p class="text-white/60 mb-2 font-lora">Active Shows</p>
+                    <p class="text-3xl font-bold text-gold-400 font-cinzel">5</p>
+                </div>
+                <div class="bg-dark-red-900/30 border border-gold-400/20 p-6 rounded-lg">
+                    <p class="text-white/60 mb-2 font-lora">Members</p>
+                    <p class="text-3xl font-bold text-gold-400 font-cinzel">342</p>
+                </div>
+            </div>
+
+            <!-- Admin Sections -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Show Management -->
+                <div class="bg-dark-red-900/30 border border-gold-400/20 p-8 rounded-lg">
+                    <h2 class="text-2xl font-bold mb-6 font-cinzel">Show Management</h2>
+                    <div class="space-y-4">
+                        <button class="w-full bg-gold-400 text-black py-3 rounded font-semibold hover:bg-gold-500 transition font-cinzel">
+                            Add New Show
+                        </button>
+                        <button class="w-full bg-dark-red-900/50 text-white border border-gold-400/30 py-3 rounded font-semibold hover:bg-dark-red-900 transition font-cinzel">
+                            Edit Existing Shows
+                        </button>
+                        <button class="w-full bg-dark-red-900/50 text-white border border-gold-400/30 py-3 rounded font-semibold hover:bg-dark-red-900 transition font-cinzel">
+                            Manage Show Schedule
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Ticket Management -->
+                <div class="bg-dark-red-900/30 border border-gold-400/20 p-8 rounded-lg">
+                    <h2 class="text-2xl font-bold mb-6 font-cinzel">Ticket Pricing & Availability</h2>
+                    <div class="space-y-4">
+                        <button class="w-full bg-gold-400 text-black py-3 rounded font-semibold hover:bg-gold-500 transition font-cinzel">
+                            Set Ticket Prices
+                        </button>
+                        <button class="w-full bg-dark-red-900/50 text-white border border-gold-400/30 py-3 rounded font-semibold hover:bg-dark-red-900 transition font-cinzel">
+                            Manage Availability
+                        </button>
+                        <button class="w-full bg-dark-red-900/50 text-white border border-gold-400/30 py-3 rounded font-semibold hover:bg-dark-red-900 transition font-cinzel">
+                            View Seat Map
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Booking Management -->
+                <div class="bg-dark-red-900/30 border border-gold-400/20 p-8 rounded-lg">
+                    <h2 class="text-2xl font-bold mb-6 font-cinzel">Booking & Attendee Management</h2>
+                    <div class="space-y-4">
+                        <button class="w-full bg-gold-400 text-black py-3 rounded font-semibold hover:bg-gold-500 transition font-cinzel">
+                            View All Bookings
+                        </button>
+                        <button class="w-full bg-dark-red-900/50 text-white border border-gold-400/30 py-3 rounded font-semibold hover:bg-dark-red-900 transition font-cinzel">
+                            Manage Attendees
+                        </button>
+                        <button class="w-full bg-dark-red-900/50 text-white border border-gold-400/30 py-3 rounded font-semibold hover:bg-dark-red-900 transition font-cinzel">
+                            Export Reports
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Coupons & Offers -->
+                <div class="bg-dark-red-900/30 border border-gold-400/20 p-8 rounded-lg">
+                    <h2 class="text-2xl font-bold mb-6 font-cinzel">Coupons & Offers</h2>
+                    <div class="space-y-4">
+                        <button class="w-full bg-gold-400 text-black py-3 rounded font-semibold hover:bg-gold-500 transition font-cinzel">
+                            Create New Coupon
+                        </button>
+                        <button class="w-full bg-dark-red-900/50 text-white border border-gold-400/30 py-3 rounded font-semibold hover:bg-dark-red-900 transition font-cinzel">
+                            Manage Offers
+                        </button>
+                        <button class="w-full bg-dark-red-900/50 text-white border border-gold-400/30 py-3 rounded font-semibold hover:bg-dark-red-900 transition font-cinzel">
+                            View Usage Stats
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reports & Analytics -->
+            <div class="mt-8 bg-dark-red-900/30 border border-gold-400/20 p-8 rounded-lg">
+                <h2 class="text-2xl font-bold mb-6 font-cinzel">Reports & Analytics</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <button class="bg-gold-400 text-black py-3 rounded font-semibold hover:bg-gold-500 transition font-cinzel">
+                        Sales Report
+                    </button>
+                    <button class="bg-gold-400 text-black py-3 rounded font-semibold hover:bg-gold-500 transition font-cinzel">
+                        Attendance Report
+                    </button>
+                    <button class="bg-gold-400 text-black py-3 rounded font-semibold hover:bg-gold-500 transition font-cinzel">
+                        Performance Analytics
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-gold-500/20 py-8 mt-12">
+        <div class="container mx-auto px-6 text-center text-white/60">
+            <p>© 2024 by Q Productions. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

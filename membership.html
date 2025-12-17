@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership & Passes - Q Productions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Cinzel:wght@400;600;700&family=Lora:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-black text-white">
+    <!-- Header -->
+    <header class="fixed top-0 w-full bg-black z-50 border-b border-gold-500/20">
+        <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-12 h-12 bg-yellow-400 flex items-center justify-center">
+                    <span class="text-black font-bold text-2xl font-cinzel">Q</span>
+                </div>
+                <a href="index.html" class="text-white text-xl font-lora hover:text-gold-400">Productions</a>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="text-white hover:text-gold-400 transition">Home</a>
+                <a href="shows.html" class="text-white hover:text-gold-400 transition">Shows</a>
+                <a href="about.html" class="text-white hover:text-gold-400 transition">About</a>
+                <a href="contact.html" class="text-white hover:text-gold-400 transition">Contact</a>
+                <a href="booking.html" class="bg-gold-400 text-black px-4 py-2 rounded hover:bg-gold-500 transition font-semibold">Get Tickets</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header - Premium Design -->
+    <section class="pt-32 pb-20 bg-gradient-to-br from-gold-400/10 via-dark-red-900/30 to-black relative overflow-hidden">
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute top-0 right-0 w-96 h-96 bg-gold-400 rounded-full blur-3xl"></div>
+        </div>
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <h1 class="text-6xl md:text-7xl font-bold mb-6 font-playfair">Membership & Passes</h1>
+            <p class="text-xl text-white/80 font-lora">Unlock exclusive benefits and priority access</p>
+        </div>
+    </section>
+
+    <!-- Membership Tiers - Card Comparison -->
+    <section class="py-20 bg-black">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Basic Tier -->
+                <div class="bg-dark-red-900/30 border border-gold-400/20 rounded-lg p-8 hover:border-gold-400/50 transition">
+                    <h3 class="text-3xl font-bold mb-4 font-cinzel">Basic</h3>
+                    <div class="mb-6">
+                        <span class="text-5xl font-bold text-gold-400">$99</span>
+                        <span class="text-white/60">/year</span>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center space-x-3">
+                            <span class="text-gold-400">✓</span>
+                            <span class="text-white/80">10% off all tickets</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <span class="text-gold-400">✓</span>
+                            <span class="text-white/80">Early booking access</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <span class="text-gold-400">✓</span>
+                            <span class="text-white/80">Newsletter subscription</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <span class="text-gold-400">✓</span>
+                            <span class="text-white/80">Member events</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-gold-400/30 text-gold-400 border border-gold-400 py-3 rounded font-semibold hover:bg-gold-400 hover:text-black transition font-cinzel">
+                        Choose Plan
+                    </button>
+                </div>
+
+                <!-- Premium Tier - Featured -->
+                <div class="bg-gradient-to-br from-gold-400/20 to-dark-red-900/50 border-2 border-gold-400 rounded-lg p-8 relative transform scale-105">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gold-400 text-black px-6 py-1 rounded-full text-sm font-bold font-cinzel">
+                        MOST POPULAR
+                    </div>
+                    <h3 class="text-3xl font-bold mb-4 font-cinzel">Premium</h3>
+                    <div class="mb-6">
+                        <span class="text-5xl font-bold text-gold-400">$199</span>
+                        <span class="text-white/60">/year</span>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center space-x-3">
+                            <span class="text-gold-400">✓</span>
+                            <span class="text-white/80">20% off all tickets</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <span class="text-gold-400">✓</span>
+                            <span class="text-white/80">Priority seating</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <span class="text-gold-400">✓</span>
+                            <span class="text-white/80">Exclusive previews</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <span class="text-gold-400">✓</span>
+                            <span class="text-white/80">Backstage tours</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <span class="text-gold-400">✓</span>
+                            <span class="text-white/80">Complimentary drinks</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <span class="text-gold-400">✓</span>
+                            <span class="text-white/80">Meet & greet events</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-gold-400 text-black py-3 rounded font-semibold hover:bg-gold-500 transition font-cinzel">
+                        Choose Plan
+                    </button>
+                </div>
+
+                <!-- VIP Tier -->
+                <div class="bg-dark-red-900/30 border border-gold-400/20 rounded-lg p-8 hover:border-gold-400/50 transition">
+                    <h3 class="text-3xl font-bold mb-4 font-cinzel">VIP</h3>
+                    <div class="mb-6">
+                        <span class="text-5xl font-bold text-gold-400">$399</span>
+                        <span class="text-white/60">/year</span>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center space-x-3">
+                            <span class="text-gold-400">✓</span>
+                            <span class="text-white/80">30% off all tickets</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <span class="text-gold-400">✓</span>
+                            <span class="text-white/80">Best seats guaranteed</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <span class="text-gold-400">✓</span>
+                            <span class="text-white/80">Season pass included</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <span class="text-gold-400">✓</span>
+                            <span class="text-white/80">VIP lounge access</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <span class="text-gold-400">✓</span>
+                            <span class="text-white/80">Cast & crew events</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <span class="text-gold-400">✓</span>
+                            <span class="text-white/80">Personal concierge</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-gold-400/30 text-gold-400 border border-gold-400 py-3 rounded font-semibold hover:bg-gold-400 hover:text-black transition font-cinzel">
+                        Choose Plan
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Season Passes -->
+    <section class="py-20 bg-gradient-to-b from-black to-dark-red-900/30">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-12 text-center font-playfair">Season Passes</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-dark-red-900/30 border border-gold-400/20 p-8 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-4 font-cinzel">Full Season Pass</h3>
+                    <p class="text-gold-400 text-3xl font-bold mb-4">$599</p>
+                    <p class="text-white/80 mb-6 font-lora">Access to all shows in the 2025 season. Includes 5 main productions plus special events.</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center space-x-2">
+                            <span class="text-gold-400">✓</span>
+                            <span class="text-white/80">All 5 main productions</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="text-gold-400">✓</span>
+                            <span class="text-white/80">Special events included</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="text-gold-400">✓</span>
+                            <span class="text-white/80">Flexible date selection</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-gold-400 text-black py-3 rounded font-semibold hover:bg-gold-500 transition font-cinzel">
+                        Purchase Pass
+                    </button>
+                </div>
+                <div class="bg-dark-red-900/30 border border-gold-400/20 p-8 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-4 font-cinzel">Flex Pass</h3>
+                    <p class="text-gold-400 text-3xl font-bold mb-4">$399</p>
+                    <p class="text-white/80 mb-6 font-lora">Choose any 3 shows from our season. Perfect for those who want flexibility.</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center space-x-2">
+                            <span class="text-gold-400">✓</span>
+                            <span class="text-white/80">Any 3 shows of your choice</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="text-gold-400">✓</span>
+                            <span class="text-white/80">Transferable to friends</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span class="text-gold-400">✓</span>
+                            <span class="text-white/80">Valid for entire season</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-gold-400 text-black py-3 rounded font-semibold hover:bg-gold-500 transition font-cinzel">
+                        Purchase Pass
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Loyalty Rewards -->
+    <section class="py-20 bg-black">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-12 text-center font-playfair">Loyalty Rewards</h2>
+            <div class="max-w-4xl mx-auto bg-gradient-to-br from-dark-red-900/50 to-black border border-gold-400/30 p-12 rounded-lg">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div>
+                        <div class="text-5xl mb-4">🎫</div>
+                        <h3 class="text-xl font-bold mb-2 font-cinzel">Earn Points</h3>
+                        <p class="text-white/80 font-lora">Get 1 point for every dollar spent on tickets and merchandise</p>
+                    </div>
+                    <div>
+                        <div class="text-5xl mb-4">🎁</div>
+                        <h3 class="text-xl font-bold mb-2 font-cinzel">Redeem Rewards</h3>
+                        <p class="text-white/80 font-lora">Use points for discounts, upgrades, and exclusive experiences</p>
+                    </div>
+                    <div>
+                        <div class="text-5xl mb-4">⭐</div>
+                        <h3 class="text-xl font-bold mb-2 font-cinzel">VIP Status</h3>
+                        <p class="text-white/80 font-lora">Unlock VIP benefits as you reach higher tiers</p>
+                    </div>
+                </div>
+                <div class="mt-8 text-center">
+                    <button class="bg-gold-400 text-black px-8 py-3 rounded font-semibold hover:bg-gold-500 transition font-cinzel">
+                        Join Loyalty Program
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-gold-500/20 py-8">
+        <div class="container mx-auto px-6 text-center text-white/60">
+            <p>© 2024 by Q Productions. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

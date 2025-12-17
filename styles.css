@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --dark-red: #8B0000;
+    --gold: #D4AF37;
+    --black: #000000;
+}
+
+body {
+    font-family: 'Lora', serif;
+}
+
+.font-playfair {
+    font-family: 'Playfair Display', serif;
+}
+
+.font-cinzel {
+    font-family: 'Cinzel', serif;
+}
+
+.font-lora {
+    font-family: 'Lora', serif;
+}
+
+.bg-dark-red-900 {
+    background-color: #5a0000;
+}
+
+.text-gold-400 {
+    color: #D4AF37;
+}
+
+.bg-gold-400 {
+    background-color: #D4AF37;
+}
+
+.border-gold-400 {
+    border-color: #D4AF37;
+}
+
+.hover\:text-gold-300:hover {
+    color: #E5C158;
+}
+
+.hover\:bg-gold-500:hover {
+    background-color: #B8941F;
+}
+
+/* Curtain Reveal Animation */
+@keyframes curtainReveal {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-curtain-reveal {
+    animation: curtainReveal 1.5s ease-out;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 2s ease-in;
+}
+
+/* Show Card Hover Effect */
+.show-card {
+    transition: all 0.3s ease;
+}
+
+.show-card:hover {
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #D4AF37;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #B8941F;
+}
+
+/* Center all headings/topics throughout the website */
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
+/* Exception: Keep left-aligned for headings inside cards for better readability */
+.show-card h3,
+.show-card h2,
+.card h3,
+.card h2,
+article h3,
+article h2,
+div[class*="card"] h3,
+div[class*="card"] h2 {
+    text-align: left;
+}
+

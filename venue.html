@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theatre & Venue Info - Q Productions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Cinzel:wght@400;600;700&family=Lora:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-black text-white">
+    <!-- Header -->
+    <header class="fixed top-0 w-full bg-black z-50 border-b border-gold-500/20">
+        <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-12 h-12 bg-yellow-400 flex items-center justify-center">
+                    <span class="text-black font-bold text-2xl font-cinzel">Q</span>
+                </div>
+                <a href="index.html" class="text-white text-xl font-lora hover:text-gold-400">Productions</a>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="text-white hover:text-gold-400 transition">Home</a>
+                <a href="shows.html" class="text-white hover:text-gold-400 transition">Shows</a>
+                <a href="about.html" class="text-white hover:text-gold-400 transition">About</a>
+                <a href="contact.html" class="text-white hover:text-gold-400 transition">Contact</a>
+                <a href="booking.html" class="bg-gold-400 text-black px-4 py-2 rounded hover:bg-gold-500 transition font-semibold">Get Tickets</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Parallax Effect -->
+    <section class="pt-32 pb-20 relative h-[500px] overflow-hidden">
+        <div class="absolute inset-0">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-black z-10"></div>
+            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=1920')] bg-cover bg-center bg-fixed"></div>
+        </div>
+        <div class="relative z-20 container mx-auto px-6 h-full flex items-center">
+            <div>
+                <h1 class="text-6xl md:text-7xl font-bold mb-4 font-playfair">Grand Theatre</h1>
+                <p class="text-2xl text-gold-400 font-lora">A Historic Venue for Unforgettable Performances</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Theatre History - Timeline Design -->
+    <section class="py-20 bg-black">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-12 text-center font-playfair">Theatre History</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="relative">
+                    <div class="absolute left-8 top-0 bottom-0 w-1 bg-gold-400/30"></div>
+                    <div class="space-y-12">
+                        <div class="relative pl-20">
+                            <div class="absolute left-6 w-4 h-4 bg-gold-400 rounded-full border-4 border-black"></div>
+                            <div class="bg-dark-red-900/30 border border-gold-400/20 p-6 rounded-lg">
+                                <h3 class="text-2xl font-bold mb-2 font-cinzel text-gold-400">1895 - The Beginning</h3>
+                                <p class="text-white/80 font-lora">Grand Theatre was founded as a cultural beacon in the heart of the city, designed by renowned architect James Morrison. The original building featured ornate Victorian architecture and seated 800 patrons.</p>
+                            </div>
+                        </div>
+                        <div class="relative pl-20">
+                            <div class="absolute left-6 w-4 h-4 bg-gold-400 rounded-full border-4 border-black"></div>
+                            <div class="bg-dark-red-900/30 border border-gold-400/20 p-6 rounded-lg">
+                                <h3 class="text-2xl font-bold mb-2 font-cinzel text-gold-400">1920 - Expansion</h3>
+                                <p class="text-white/80 font-lora">Major renovation expanded the theatre to 1,200 seats, adding modern amenities while preserving the historic charm. The grand chandelier was installed, becoming an iconic symbol of the venue.</p>
+                            </div>
+                        </div>
+                        <div class="relative pl-20">
+                            <div class="absolute left-6 w-4 h-4 bg-gold-400 rounded-full border-4 border-black"></div>
+                            <div class="bg-dark-red-900/30 border border-gold-400/20 p-6 rounded-lg">
+                                <h3 class="text-2xl font-bold mb-2 font-cinzel text-gold-400">2000 - Modernization</h3>
+                                <p class="text-white/80 font-lora">State-of-the-art sound and lighting systems were installed, along with accessibility improvements. The theatre was designated as a historic landmark while embracing modern technology.</p>
+                            </div>
+                        </div>
+                        <div class="relative pl-20">
+                            <div class="absolute left-6 w-4 h-4 bg-gold-400 rounded-full border-4 border-black"></div>
+                            <div class="bg-dark-red-900/30 border border-gold-400/20 p-6 rounded-lg">
+                                <h3 class="text-2xl font-bold mb-2 font-cinzel text-gold-400">Today</h3>
+                                <p class="text-white/80 font-lora">Grand Theatre continues to be a premier destination for world-class performances, hosting over 200 shows annually and welcoming over 250,000 patrons each year.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seating & Facilities - Grid Layout -->
+    <section class="py-20 bg-gradient-to-b from-black to-dark-red-900/30">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+                <div class="bg-dark-red-900/30 border border-gold-400/20 p-8 rounded-lg">
+                    <h2 class="text-3xl font-bold mb-6 font-playfair">Seating Capacity</h2>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center border-b border-gold-400/20 pb-3">
+                            <span class="text-white font-semibold">Premium Orchestra</span>
+                            <span class="text-gold-400 text-xl font-bold">300 seats</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-gold-400/20 pb-3">
+                            <span class="text-white font-semibold">Standard Orchestra</span>
+                            <span class="text-gold-400 text-xl font-bold">500 seats</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-gold-400/20 pb-3">
+                            <span class="text-white font-semibold">Mezzanine</span>
+                            <span class="text-gold-400 text-xl font-bold">250 seats</span>
+                        </div>
+                        <div class="flex justify-between items-center pt-3">
+                            <span class="text-white font-bold text-lg">Total Capacity</span>
+                            <span class="text-gold-400 text-2xl font-bold">1,200 seats</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-dark-red-900/30 border border-gold-400/20 p-8 rounded-lg">
+                    <h2 class="text-3xl font-bold mb-6 font-playfair">Facilities</h2>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center space-x-3">
+                            <span class="text-gold-400 text-2xl">✓</span>
+                            <span class="text-white">Wheelchair Accessible</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <span class="text-gold-400 text-2xl">✓</span>
+                            <span class="text-white">Hearing Assistance</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <span class="text-gold-400 text-2xl">✓</span>
+                            <span class="text-white">Concession Stand</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <span class="text-gold-400 text-2xl">✓</span>
+                            <span class="text-white">Coat Check</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <span class="text-gold-400 text-2xl">✓</span>
+                            <span class="text-white">Bar & Lounge</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <span class="text-gold-400 text-2xl">✓</span>
+                            <span class="text-white">Gift Shop</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <span class="text-gold-400 text-2xl">✓</span>
+                            <span class="text-white">Free WiFi</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <span class="text-gold-400 text-2xl">✓</span>
+                            <span class="text-white">Valet Parking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parking & Accessibility - Info Cards -->
+    <section class="py-20 bg-black">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-12 text-center font-playfair">Parking & Accessibility</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-gradient-to-br from-dark-red-900/50 to-black border border-gold-400/30 p-8 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-4 font-cinzel text-gold-400">Parking Options</h3>
+                    <ul class="space-y-3 font-lora">
+                        <li class="flex items-start space-x-3">
+                            <span class="text-gold-400 mt-1">📍</span>
+                            <div>
+                                <p class="font-semibold">On-Site Parking</p>
+                                <p class="text-white/70 text-sm">200 spaces available, $15 per show</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-gold-400 mt-1">📍</span>
+                            <div>
+                                <p class="font-semibold">Valet Service</p>
+                                <p class="text-white/70 text-sm">Available at main entrance, $20</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-gold-400 mt-1">📍</span>
+                            <div>
+                                <p class="font-semibold">Street Parking</p>
+                                <p class="text-white/70 text-sm">Limited metered parking nearby</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-gold-400 mt-1">📍</span>
+                            <div>
+                                <p class="font-semibold">Public Transit</p>
+                                <p class="text-white/70 text-sm">Metro Station: 2 blocks away</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-gradient-to-br from-dark-red-900/50 to-black border border-gold-400/30 p-8 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-4 font-cinzel text-gold-400">Accessibility</h3>
+                    <ul class="space-y-3 font-lora">
+                        <li class="flex items-start space-x-3">
+                            <span class="text-gold-400 mt-1">♿</span>
+                            <div>
+                                <p class="font-semibold">Wheelchair Accessible</p>
+                                <p class="text-white/70 text-sm">Ramps, elevators, accessible seating</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-gold-400 mt-1">👂</span>
+                            <div>
+                                <p class="font-semibold">Hearing Assistance</p>
+                                <p class="text-white/70 text-sm">Assistive listening devices available</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-gold-400 mt-1">👁️</span>
+                            <div>
+                                <p class="font-semibold">Visual Assistance</p>
+                                <p class="text-white/70 text-sm">Audio description available upon request</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-gold-400 mt-1">ℹ️</span>
+                            <div>
+                                <p class="font-semibold">Service Animals</p>
+                                <p class="text-white/70 text-sm">Welcome in all areas of the theatre</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Maps Integration -->
+    <section class="py-20 bg-gradient-to-b from-black to-dark-red-900/30">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-12 text-center font-playfair">Location</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-dark-red-900/30 border border-gold-400/20 rounded-lg overflow-hidden">
+                    <div class="h-96 bg-gradient-to-br from-gold-400/10 to-dark-red-800 flex items-center justify-center">
+                        <div class="text-center">
+                            <p class="text-2xl mb-4">📍</p>
+                            <p class="text-xl font-semibold mb-2 font-cinzel">Grand Theatre</p>
+                            <p class="text-white/80 font-lora">123 Theatre District, City Center</p>
+                            <p class="text-white/80 font-lora">City, State 12345</p>
+                            <a href="https://maps.google.com" target="_blank" class="inline-block mt-4 text-gold-400 hover:text-gold-300 font-semibold">
+                                Open in Google Maps →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-gold-500/20 py-8">
+        <div class="container mx-auto px-6 text-center text-white/60">
+            <p>© 2024 by Q Productions. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

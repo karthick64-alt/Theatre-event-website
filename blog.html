@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Blog - Q Productions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Cinzel:wght@400;600;700&family=Lora:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-black text-white">
+    <!-- Header -->
+    <header class="fixed top-0 w-full bg-black z-50 border-b border-gold-500/20">
+        <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-12 h-12 bg-yellow-400 flex items-center justify-center">
+                    <span class="text-black font-bold text-2xl font-cinzel">Q</span>
+                </div>
+                <a href="index.html" class="text-white text-xl font-lora hover:text-gold-400">Productions</a>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="text-white hover:text-gold-400 transition">Home</a>
+                <a href="shows.html" class="text-white hover:text-gold-400 transition">Shows</a>
+                <a href="about.html" class="text-white hover:text-gold-400 transition">About</a>
+                <a href="contact.html" class="text-white hover:text-gold-400 transition">Contact</a>
+                <a href="booking.html" class="bg-gold-400 text-black px-4 py-2 rounded hover:bg-gold-500 transition font-semibold">Get Tickets</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header - Magazine Style -->
+    <section class="pt-32 pb-16 bg-gradient-to-br from-dark-red-900 via-black to-dark-red-900">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-6xl md:text-7xl font-bold mb-6 font-playfair">News & Blog</h1>
+            <p class="text-xl text-white/80 font-lora">Stay updated with our latest announcements and articles</p>
+        </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="py-12 bg-black">
+        <div class="container mx-auto px-6">
+            <div class="bg-gradient-to-br from-dark-red-900/50 to-black border border-gold-400/30 rounded-lg overflow-hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+                    <div class="relative h-96 lg:h-auto">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1503095396549-807759245b35?w=800')] bg-cover bg-center"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                    </div>
+                    <div class="p-8 lg:p-12 flex flex-col justify-center">
+                        <span class="text-gold-400 text-sm font-semibold mb-2 font-cinzel">FEATURED</span>
+                        <h2 class="text-4xl font-bold mb-4 font-playfair">Hamlet Opens to Rave Reviews</h2>
+                        <p class="text-white/80 mb-6 font-lora leading-relaxed">
+                            Our latest production of Hamlet has received exceptional reviews from critics and audiences alike. The innovative staging and powerful performances have been praised as a fresh take on Shakespeare's timeless tragedy.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-white/60 text-sm">December 15, 2024</span>
+                            <a href="#" class="text-gold-400 hover:text-gold-300 font-semibold font-cinzel">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts Grid -->
+    <section class="py-16 bg-gradient-to-b from-black to-dark-red-900/30">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-12 font-playfair">Latest Articles</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Blog Post 1 -->
+                <article class="bg-dark-red-900/30 border border-gold-400/20 rounded-lg overflow-hidden hover:border-gold-400/50 transition">
+                    <div class="relative h-48">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=600')] bg-cover bg-center"></div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-gold-400 text-xs font-semibold font-cinzel">ANNOUNCEMENT</span>
+                        <h3 class="text-2xl font-bold mt-2 mb-3 font-playfair">Season 2025 Lineup Revealed</h3>
+                        <p class="text-white/70 mb-4 font-lora text-sm">We're excited to announce our upcoming season featuring five spectacular productions...</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-white/60 text-xs">December 10, 2024</span>
+                            <a href="#" class="text-gold-400 hover:text-gold-300 text-sm font-semibold">Read →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="bg-dark-red-900/30 border border-gold-400/20 rounded-lg overflow-hidden hover:border-gold-400/50 transition">
+                    <div class="relative h-48">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1514306191717-452ec28c7814?w=600')] bg-cover bg-center"></div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-gold-400 text-xs font-semibold font-cinzel">BEHIND THE SCENES</span>
+                        <h3 class="text-2xl font-bold mt-2 mb-3 font-playfair">The Making of The Phantom</h3>
+                        <p class="text-white/70 mb-4 font-lora text-sm">Go behind the scenes with our production team as they bring this musical masterpiece to life...</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-white/60 text-xs">December 5, 2024</span>
+                            <a href="#" class="text-gold-400 hover:text-gold-300 text-sm font-semibold">Read →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="bg-dark-red-900/30 border border-gold-400/20 rounded-lg overflow-hidden hover:border-gold-400/50 transition">
+                    <div class="relative h-48">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600')] bg-cover bg-center"></div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-gold-400 text-xs font-semibold font-cinzel">EVENT UPDATE</span>
+                        <h3 class="text-2xl font-bold mt-2 mb-3 font-playfair">Special Holiday Performances</h3>
+                        <p class="text-white/70 mb-4 font-lora text-sm">Join us for our special holiday season performances with extended showtimes and festive atmosphere...</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-white/60 text-xs">November 28, 2024</span>
+                            <a href="#" class="text-gold-400 hover:text-gold-300 text-sm font-semibold">Read →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 4 -->
+                <article class="bg-dark-red-900/30 border border-gold-400/20 rounded-lg overflow-hidden hover:border-gold-400/50 transition">
+                    <div class="relative h-48">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600')] bg-cover bg-center"></div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-gold-400 text-xs font-semibold font-cinzel">THEATRE ARTICLE</span>
+                        <h3 class="text-2xl font-bold mt-2 mb-3 font-playfair">The Art of Stage Design</h3>
+                        <p class="text-white/70 mb-4 font-lora text-sm">Explore how our set designers create immersive worlds that transport audiences to different times and places...</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-white/60 text-xs">November 20, 2024</span>
+                            <a href="#" class="text-gold-400 hover:text-gold-300 text-sm font-semibold">Read →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 5 -->
+                <article class="bg-dark-red-900/30 border border-gold-400/20 rounded-lg overflow-hidden hover:border-gold-400/50 transition">
+                    <div class="relative h-48">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=600')] bg-cover bg-center"></div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-gold-400 text-xs font-semibold font-cinzel">ANNOUNCEMENT</span>
+                        <h3 class="text-2xl font-bold mt-2 mb-3 font-playfair">New Membership Program Launch</h3>
+                        <p class="text-white/70 mb-4 font-lora text-sm">We're thrilled to introduce our new membership program with exclusive benefits and early access to tickets...</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-white/60 text-xs">November 15, 2024</span>
+                            <a href="#" class="text-gold-400 hover:text-gold-300 text-sm font-semibold">Read →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 6 -->
+                <article class="bg-dark-red-900/30 border border-gold-400/20 rounded-lg overflow-hidden hover:border-gold-400/50 transition">
+                    <div class="relative h-48">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=600')] bg-cover bg-center"></div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-gold-400 text-xs font-semibold font-cinzel">CAST SPOTLIGHT</span>
+                        <h3 class="text-2xl font-bold mt-2 mb-3 font-playfair">Meet the Cast of Romeo & Juliet</h3>
+                        <p class="text-white/70 mb-4 font-lora text-sm">Get to know the talented actors bringing Shakespeare's star-crossed lovers to life in our upcoming production...</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-white/60 text-xs">November 10, 2024</span>
+                            <a href="#" class="text-gold-400 hover:text-gold-300 text-sm font-semibold">Read →</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="py-16 bg-black">
+        <div class="container mx-auto px-6">
+            <div class="max-w-2xl mx-auto bg-gradient-to-br from-dark-red-900/50 to-black border border-gold-400/30 p-12 rounded-lg text-center">
+                <h2 class="text-3xl font-bold mb-4 font-playfair">Stay Updated</h2>
+                <p class="text-white/80 mb-8 font-lora">Subscribe to our newsletter for the latest news, announcements, and exclusive offers.</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <input type="email" placeholder="Enter your email" class="flex-1 bg-black border border-gold-400/30 rounded px-6 py-3 text-white focus:outline-none focus:border-gold-400">
+                    <button class="bg-gold-400 text-black px-8 py-3 rounded font-semibold hover:bg-gold-500 transition font-cinzel">
+                        Subscribe
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-gold-500/20 py-8">
+        <div class="container mx-auto px-6 text-center text-white/60">
+            <p>© 2024 by Q Productions. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
